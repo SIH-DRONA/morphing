@@ -15,7 +15,7 @@ def paracompare(shape,paralist):
 		if shape[i] < paralist[i]:
 			check += 1
 	print("check=",check)
-	if check == 3:
+	if check == 2:
 		return 1 #yes
 	else: 
 		return 0 #no
