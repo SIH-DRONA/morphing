@@ -1,0 +1,8 @@
+name: test runner for morphing code
+on: push
+jobs:
+        testrun:
+                runs-on: ubuntu-latest
+                steps:
+                        - run: python3 morpher.py
+
