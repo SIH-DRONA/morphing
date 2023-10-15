@@ -1,11 +1,8 @@
-''' 
 
-
-'''  
 #UNCOMMENT THE BELOW THREE LINES TO TEST FOR SAMPLE DATA
-#nazidims = [3,2]# mediocre
-#crossdims = [4,4] # max dims
-#Hdims =  [1,2] # min dims  
+#nazidims = [3,2,3] # mediocre
+#crossdims =  [4,4,4] # max dims
+#Hdims =  [1,2,1]# min dims  
 
 def paracompare(shape,paralist):
 	check = 0
@@ -13,13 +10,13 @@ def paracompare(shape,paralist):
 		if shape[i] < paralist[i]:
 			check += 1
 	print("check=",check)
-	if check == 2:
+	if check == 3:
 		return 1 #yes
 	else: 
 		return 0 #no
 
-def morph(d1,d2): 
-	dimlist =[d1,d2]
+def morph(d1,d2,d3=10): 
+	dimlist = [d1,d2,d3]
 	if paracompare(crossdims,dimlist) == 1:
 	    #cross()
 	    print("CROSS shape")
@@ -37,4 +34,4 @@ either debug, change drone-size or move on
 		""") 
 
 #UNCOMMENT THIS LINE TO TEST WITH SAMPLE DATA
-#morph(3,3)
+#morph(2,3)
