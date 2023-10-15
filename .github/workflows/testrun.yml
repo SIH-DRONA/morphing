@@ -4,5 +4,5 @@ jobs:
         testrun:
                 runs-on: ubuntu-latest
                 steps:
-                        - run: python3 ./morpher.py
+                        - run: python3 /home/morpher.py
 
