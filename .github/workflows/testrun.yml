@@ -6,6 +6,9 @@ jobs:
                 steps:
                         - name: Check out code
                           uses: actions/checkout@v2
+
+                        - name: install dependencies
+                          uses: pip install numpy
                           
                         - run: python3 ./morpher.py
 
