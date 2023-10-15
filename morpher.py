@@ -5,9 +5,9 @@
 import numpy as np 
 
 #UNCOMMENT THE BELOW THREE LINES TO TEST FOR SAMPLE DATA
-#nazidims = np.array([3,2,3]) # mediocre
-#crossdims =  np.array([4,4,4]) # max dims
-#Hdims =  np.array([1,2,1]) # min dims  
+#nazidims = np.array([3,2]) # mediocre
+#crossdims =  np.array([4,4]) # max dims
+#Hdims =  np.array([1,2]) # min dims  
 
 def paracompare(shape,paralist):
 	check = 0
@@ -20,8 +20,8 @@ def paracompare(shape,paralist):
 	else: 
 		return 0 #no
 
-def morph(d1,d2,d3): 
-	dimlist = np.array([d1,d2,d3])
+def morph(d1,d2): 
+	dimlist = np.array([d1,d2])
 	if paracompare(crossdims,dimlist) == 1:
 	    #cross()
 	    print("CROSS shape")
