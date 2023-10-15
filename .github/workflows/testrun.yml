@@ -4,5 +4,8 @@ jobs:
         testrun:
                 runs-on: ubuntu-latest
                 steps:
-                        - run: python3 /home/morpher.py
+                        - name: Check out code
+                          uses: actions/checkout@v2
+                          
+                        - run: python3 ./morpher.py
 
